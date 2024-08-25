@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 	
-	"github.com/go-puzzles/plog"
-	"github.com/go-puzzles/plog/log"
+	"github.com/go-puzzles/puzzles/plog"
+	"github.com/go-puzzles/puzzles/plog/log"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/utils"
 )

@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	
-	"github.com/go-puzzles/pgorm"
+	"github.com/go-puzzles/puzzles/pgorm"
 )
 
 func main() {

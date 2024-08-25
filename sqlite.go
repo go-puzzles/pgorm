@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 	
-	"github.com/go-puzzles/dialer"
+	"github.com/go-puzzles/puzzles/dialer"
 	"gorm.io/gorm"
 )
 
