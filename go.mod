@@ -1,4 +1,4 @@
-module github.com/go-puzzles/puzzles/pgorm
+module github.com/go-puzzles/pgorm
 
 go 1.23.0
 
