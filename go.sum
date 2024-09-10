@@ -37,8 +37,8 @@ github.com/go-puzzles/cores v1.0.8 h1:V0Lkzn/cllb6I+xt7KpsWP1WSE113/7XGPM4PbvkWr
 github.com/go-puzzles/cores v1.0.8/go.mod h1:3neCl0PQ8lOSiuU53kepYJVAdBjDMoyDMDwOhLgLV/4=
 github.com/go-puzzles/plog v1.0.6 h1:L42EfFOOFLSjVPOXzy3dvIsuWzqybRiaJVkYY40um8g=
 github.com/go-puzzles/plog v1.0.6/go.mod h1:dN7lRdSXQGjUWUtp3jheC9TP1Cb8h21SJoLMovx292U=
-github.com/go-puzzles/puzzles v1.0.0 h1:K7HDXCJujMfHMNY4t9avzd5j5KFg8GiRHnutqrFzpYM=
-github.com/go-puzzles/puzzles v1.0.0/go.mod h1:wNhn5FRHCY8K54bB/E7HjWJwFkgGj9axA75dN16b2oA=
+github.com/go-puzzles/puzzles v1.0.3 h1:FcTyKNe56z5sVYhYl7DnfqqZjV2xkCoPKbjhXIs4nK0=
+github.com/go-puzzles/puzzles v1.0.3/go.mod h1:wNhn5FRHCY8K54bB/E7HjWJwFkgGj9axA75dN16b2oA=
 github.com/go-sql-driver/mysql v1.7.0/go.mod h1:OXbVy3sEdcQ2Doequ6Z5BW6fXNQTmx+9S1MCJN5yJMI=
 github.com/go-sql-driver/mysql v1.8.1 h1:LedoTUt/eveggdHS9qUFC1EFSa8bU2+1pZjSRpvNJ1Y=
 github.com/go-sql-driver/mysql v1.8.1/go.mod h1:wEBSXgmK//2ZFJyE+qWnIsVGmvmEKlqwuVSjsCm7DZg=

@@ -3,7 +3,7 @@ module github.com/go-puzzles/pgorm
 go 1.23.0
 
 require (
-	github.com/go-puzzles/puzzles v1.0.0
+	github.com/go-puzzles/puzzles v1.0.3
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.9.0
 	gorm.io/gorm v1.25.11

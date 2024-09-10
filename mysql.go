@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"strings"
 	"time"
-	
+
 	"github.com/go-puzzles/puzzles/dialer"
+	thirdparty "github.com/go-puzzles/puzzles/plog/third-party"
 	"gorm.io/gorm"
 )
 
@@ -42,15 +43,15 @@ func (m *MysqlConfig) GetUid() string {
 func (m *MysqlConfig) DialGorm() (*gorm.DB, error) {
 	m.TrimSpace()
 	logPrefix := fmt.Sprintf("mysql:%s", m.Database)
-	
+
 	return dialer.DialMysqlGorm(
 		m.Instance,
 		dialer.WithAuth(m.Username, m.Password),
 		dialer.WithDBName(m.Database),
 		dialer.WithLogger(
-			NewGormLogger(
-				WithPrefix(logPrefix),
-				WithSlowThreshold(time.Millisecond*200),
+			thirdparty.NewGormLogger(
+				thirdparty.WithPrefix(logPrefix),
+				thirdparty.WithSlowThreshold(time.Millisecond*200),
 			),
 		),
 	)

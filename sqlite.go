@@ -3,8 +3,9 @@ package pgorm
 import (
 	"fmt"
 	"time"
-	
+
 	"github.com/go-puzzles/puzzles/dialer"
+	thirdparty "github.com/go-puzzles/puzzles/plog/third-party"
 	"gorm.io/gorm"
 )
 
@@ -29,9 +30,9 @@ func (s *SqliteConfig) DialGorm() (*gorm.DB, error) {
 	return dialer.DialSqlLiteGorm(
 		s.DbFile,
 		dialer.WithLogger(
-			NewGormLogger(
-				WithPrefix(logPrefix),
-				WithSlowThreshold(time.Millisecond*200),
+			thirdparty.NewGormLogger(
+				thirdparty.WithPrefix(logPrefix),
+				thirdparty.WithSlowThreshold(time.Millisecond*200),
 			),
 		),
 	)
