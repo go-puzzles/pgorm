@@ -3,7 +3,7 @@ module github.com/go-puzzles/pgorm
 go 1.23.0
 
 require (
-	github.com/go-puzzles/puzzles v1.0.3
+	github.com/go-puzzles/puzzles v1.0.11
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.9.0
 	gorm.io/gorm v1.25.11
@@ -15,8 +15,6 @@ require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/fatih/color v1.17.0 // indirect
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
-	github.com/go-puzzles/cores v1.0.8 // indirect
-	github.com/go-puzzles/plog v1.0.6 // indirect
 	github.com/go-sql-driver/mysql v1.8.1 // indirect
 	github.com/gomodule/redigo v1.9.2 // indirect
 	github.com/hashicorp/consul/api v1.29.3 // indirect

@@ -11,6 +11,34 @@ import (
 	"gorm.io/gorm"
 )
 
+type MysqlDsn struct {
+	DSN string
+}
+
+func (m *MysqlDsn) Validate() error {
+	if m.DSN == "" {
+		return errors.New("mysql config need DSN")
+	}
+
+	return nil
+}
+
+func (m *MysqlDsn) GetDBType() dbType {
+	return mysql
+}
+
+func (m *MysqlDsn) GetService() string {
+	return m.DSN
+}
+
+func (m *MysqlDsn) GetUid() string {
+	return m.DSN
+}
+
+func (m *MysqlDsn) DialGorm() (*gorm.DB, error) {
+	return dialer.DialMysqlGormWithDSN(m.DSN)
+}
+
 type MysqlConfig struct {
 	Instance string
 	Database string
